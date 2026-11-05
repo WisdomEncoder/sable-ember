@@ -1,0 +1,136 @@
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+	margin: 0;
+}
+
+body{
+		margin-top: 50px;
+}
+
+nav {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	padding: 1px 70px;
+	box-sizing: border-box;
+	transition: .5s;
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,0.7665660014005602) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.774969362745098) 100%);
+}
+
+
+nav ul {
+	float: right;
+	display: flex;
+}
+nav ul li {
+	list-style: none;
+}
+nav ul li a {
+	list-style: armenian;
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+nav ul li a:hover {
+	background-color: #fff;
+	color: #000;
+}
+nav ul li.active a {
+	background-color: #fff;
+	color: #000;
+}
+nav .logo {
+	float: left;
+	padding-top: 5px;
+}
+nav h1 {
+	z-index: 2;
+	color: white;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+nav hr {
+	margin: auto;
+
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 0px;
+}
+
+
+
+/* Create four equal columns that sits next to each other */
+.column {
+	flex: 24%;
+	max-width: 25%;
+	padding: 2px;
+}
+
+.column img {
+	position: relative;
+	vertical-align: middle;
+	width: 100%;
+	margin: 0 auto;
+	filter: contrast(70%);
+	z-index: 1;
+	transition: 1s ease;
+}
+
+.column img:hover{
+	z-index: 30;
+	filter: contrast(100%);
+	transform: scale(1.2);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;	
+	}
+}
+
+/* This is for 2 column class*/
+
+.column_2 {
+	flex: 50%;
+	max-width: 49%;
+	padding: 0 2px;
+}
+
+.column_2 img {
+	position: relative;
+	vertical-align: middle;
+	width: 100%;
+	margin: 0 auto;
+	filter: contrast(70%);
+	z-index: 1;
+	transition: 1s ease;
+	padding-top: 2px;
+}
+
+.column_2 img:hover {
+	z-index: 30;
+	filter: contrast(100%);
+	transform: scale(1.1);
+}
